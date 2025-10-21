@@ -2,12 +2,47 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8" />
-    <title>HomeCook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeCook🍳</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>HomeCook @</h1>
-    <p>집에 있는 재료로 만들 수 있는 레시피를 찾아보세요!</p>
+    <header class="hc-header">
+        <h1 class="hc-title">HomeCook 🍳</h1>
+        <p class="hc-subtitle">집에 있는 재료로 만들 수 있는 레시피를 찾아보세요!</p>
+    </header>
+    
+    <main class="hc-main">
+        <section id="ingredients" class="hc-section">
+            <h2 class="hc-section-title">재료 선택</h2>
+            <p class="hc-section-desc">내일 이 영역에 체크박스 ui가 들어갑니다</p>
+            <form id="ingredient-form" class="hc-ingredients-list">
+                <lable><input type="checkbox" value="계란"> 계란</lable>
+                <lable><input type="checkbox" value="양파"> 양파</lable>
+                <lable><input type="checkbox" value="밥"> 밥</lable>
+                <lable><input type="checkbox" value="간장"> 간장</lable>
+                <lable><input type="checkbox" value="참기름"> 참기름</lable>
+                <br><br>
+                <button type="button" id="submit-btn">선택 완료</button>
+            </form>
+        </section>
+
+        <section id="recipes" class="hc-section">
+            <h2 class="hc-section-title">추천 레시피</h2>
+            <p class="hc-section-desc">재료 선택 후 여기에 레시피가 표시됩니다</p>
+            <div id="selected-ingredients">
+
+            </div>
+
+            <div id="recipe-results">
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="hc-footer">
+        <small>© 2025 HomeCook</small>
+    </footer>
 
     <script src="script.js"></script>
 </body>
